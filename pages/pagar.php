@@ -33,13 +33,13 @@
                 $deuda = new crearDeuda;
 
                 $res_deuda = $deuda->crear($_POST['prodCod'], $_POST['prodCant'], $usuario_id);
-                echo "Respuesta= ".$res_deuda;
                 if($res_deuda == 'cantMen'){
                     echo '<script type="text/javascript">sweetAlert("¡Atención!","La cantidad no puede ser menor a uno","warning")</script>';
                 }else if($res_deuda == 'deuNo'){
                     echo '<script type="text/javascript">sweetAlert("Error","No se ha podido generar la peticion, comuniquese a servicio tecnico","error")</script>';
                 }else{
-                    header("Location: ".$res_deuda);
+                    echo "Link de pago: <a href="$res_deuda"></a>";
+                    //header("Location: ".$res_deuda target="_blank");
                 }
             }
 

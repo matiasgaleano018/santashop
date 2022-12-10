@@ -2,13 +2,13 @@
 
     class conexion {
         private $servidor = "localhost";
-        private $usuario  = "root";
-        private $pass     = "";
+        private $usuario  = "id19988927_root";
+        private $pass     = "Matias@18062000";
         private $conexion;
 
         public function __construct(){
             try{
-                $this->conexion = new PDO("mysql:host=$this->servidor;dbname=santashop", $this->usuario, $this->pass);
+                $this->conexion = new PDO("mysql:host=$this->servidor;dbname=id19988927_santashop", $this->usuario, $this->pass);
                 $this->conexion->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
             }catch(PDOException $e){
                 return "Error en la base de datos ".$e;

@@ -29,7 +29,6 @@
         <title>Iniciar Sesion</title>
         <link href="../css/styles.css" rel="stylesheet" />
         <link href="../css/styles2.css" rel="stylesheet" />
-        <link rel="shortcut icon" href="../img/favicon.png" type="image/x-icon">
         <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
         <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
     </head>

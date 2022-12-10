@@ -30,7 +30,7 @@
                 $sql = "SELECT id FROM usuarios WHERE email = '$email' AND contrasenha = '$contrasenha'";
                 $us_id = $ctrl->ctrl_seleccionar($sql);
                 
-                if($resul == 'ok'){
+                if(!empty($resul)){
 
                     //Iniciar sesion con el usuario recien creado
                     $ini = new IniciarSesion();
