@@ -38,7 +38,9 @@
                 }else if($res_deuda == 'deuNo'){
                     echo '<script type="text/javascript">sweetAlert("Error","No se ha podido generar la peticion, comuniquese a servicio tecnico","error")</script>';
                 }else{
-                    echo "Link de pago: <a href="$res_deuda"></a>";
+                    echo "<div class='alert alert-dark' role='alert'>
+                    Link de pago: <a href="$res_deuda" class='btn btn-dark'>Click aquí</a>
+                  </div>";
                     //header("Location: ".$res_deuda target="_blank");
                 }
             }
